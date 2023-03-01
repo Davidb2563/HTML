@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Formulario y estilos css</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../img/incap.png" alt="">
+            <h1>Formulario y listas HTML </h1>
+            <ul>
+                <li>Home</li>
+                <li>Productos</li>
+                <li>Servicios</li>
+                <li>Contactos</li>
+            </ul>
+        </nav>
+        <section>
+            <form action="datos.php" method="post">
+                <!-- Seccion de fieldset -->
+                <fieldset>
+                    <!-- Ingreso de nombre -->
+                    <label for="">Nombre Completo:</label>
+                    <input type="text" name="Nombre completo:" placeholder="&#9756; ingrese su nombre " required="">
+                    <br><br>
+                    <!-- Seccion de email -->
+                    <label for="">Email:</label>
+                    <input type="email" name="email:" placeholder="&#9874; ingrese su email" required="">
+                    <br><br>
+                    <!-- Seccion Contraseña -->
+                    <label for="">Contraseña:</label>
+                    <input type="password" name="Contraseña" placeholder="&#9745; ingrese la contraseña" required="">
+                    <!-- Seccion de hobbies -->
+                    <label for="">Selecciona tus hobbies</label>
+                    <br>
+                    <input type="checkbox" name="Cine"> Cine<br>
+                    <input type="checkbox" name="Lectura"> Lectura<br>
+                    <input type="checkbox" name="Deporte"> Deporte <br>
+                    <br>
+                    <br>
+                    <!-- Seccion Estado Civil -->
+                    <label for="">Estado Civil</label><br>
+                    <input type="radio" name="Soltero(a)"> Soltero(a)<br>
+                    <input type="radio" name="Casado(a)"> Casado(a)<br>
+                    <input type="radio" name="Viudo(a)"> Viudo(a)<br>
+                    <br><br>
+                    <!-- Seleccionar opcion de lista -->
+                    <label for="">Programas Tecnicos</label>
+                    <select name="select" id="">
+                        <option>Seleccione programa</option>
+                        <option>Sitemas</option>
+                        <option>Diseño grafico</option>
+                        <option>Contabilidad</option>
+                    </select>
+                    <br><br>
+                    <label for="">Tu comentario</label><br>
+                    <textarea name="mensaje" id="" cols="40" rows="5"></textarea>
+                </fieldset>
+                <br><br>
+                <!-- Seccion Botones -->
+                <button class="button" type="submit">Enviar</button>
+                <button class="button" type="reset">Cancelar</button>
+            </form>
+        </section>
+        <!-- Seccion de Footer -->
+        <footer>
+            <p>Derechos Reservados por @David &copy;2023</p>
+        </footer>
+
+    </header>
+</body>
+</html>
